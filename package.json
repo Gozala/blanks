@@ -1,6 +1,6 @@
 {
   "name": "blanks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "immutable blanks",
   "keywords": [
     "immutable",
@@ -28,7 +28,7 @@
     "build-node": "babel ./src --out-dir ./lib --plugins flow-comments --blacklist flow",
     "build-browser": "babel ./src --out-dir ./dist --modules umdStrict",
     "build": "npm run build-node && npm run build-browser",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && npm run test"
   },
   "repository": {
     "type": "git",
